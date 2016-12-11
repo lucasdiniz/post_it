@@ -1,0 +1,249 @@
+<!DOCTYPE html><!--[if IE 8]>
+		<html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="en">
+	<![endif]--><!--[if !(IE 8) ]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><!--<![endif]--><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>WordPress.com ‹ Log In</title>
+	<link rel="stylesheet" href="https://s1.wp.com/wp-admin/css/wpcom.css?m=1461157910h&amp;version=4.6.1-RC1-38499" type="text/css" />
+<link rel="dns-prefetch" href="//s0.wp.com" />
+<script type="text/javascript">
+if ( window.top !== window.self ) {
+	if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+		window.top.location.href = window.self.location.href;
+	}
+}
+</script>
+<script type="text/javascript" src="https://s1.wp.com/_static/??-eJzTLy/QzcxLzilNSS3WzwKiwtLUokoopZdVrKOPT4FubmZ6UWJJql5uZh5QsX2uraGJmZmpkbGluUUWACWqILk="></script>
+<link rel="stylesheet" id="all-css-0-1" href="https://s0.wp.com/_static/??-eJzTLy/QzcxLzilNSS3WTy4u1k9JLM7ITM7PK9bLzczTA4ro6KMrSSotKUFXkJgC5IFl0/KLcnHJ5Rga5OGSyk/PRJLL1M/LLwG7A87Aoqm8IDk/FyRun2traGJubGhuZG5kkAUAr7RMYw==" type="text/css" media="all" />
+<link rel="canonical" href="https://wordpress.com/wp-login.php" />
+	<style type="text/css">
+		body, form .input {
+			font-family: "Open Sans", "Helvetica Neue", "Arial", sans;
+		}
+
+		body.login.recover-password,
+		body.login.recover-password-success {
+			height: auto;
+			min-height: 100%;
+		}
+
+		
+		#recovery {
+			padding-bottom: 24px;
+		}
+
+		.recover-password #login_error {
+			width: auto;
+		}
+
+		#login_error ul {
+			list-style: square outside none;
+			margin-left: 15px;
+		}
+
+		#login_error ol {
+					margin-left: 25px;
+				}
+
+		.message ol {
+					margin: 10px 0px 10px 20px;
+				}
+
+		#login_error h2, #recovery h2 {
+			padding-bottom: 10px;
+		}
+
+		#login_error h3 {
+			padding-bottom: 5px;
+		}
+
+		#login_error h3 {
+			margin-top: 10px;
+		}
+
+		.recover-password #recovery h2 {
+			margin-bottom: 5px;
+		}
+		.recover-password-success #recovery h2 {
+			margin-bottom: .5em;
+		}
+
+		.recover-password #recovery p {
+			line-height: 1.6;
+			padding-bottom: 10px;
+			border-top: none;
+		}
+		.recover-password-success #recovery p {
+			line-height: 1.6;
+			padding-bottom: 1em;
+		}
+
+		.recovery-stage {
+			margin: 14px 0px 27px 0px;
+		}
+		.login .recovery-stage input[type="text"] {
+			margin-bottom: 5px;
+		}
+
+		.recovery-ownership-message {
+			background-color: #fff;
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+			box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+			padding: 7px 15px 0 15px;
+			margin: 1em 0;
+			background: #ffffe0;
+		}
+
+		.recovery-error-message {
+			display: none;
+			background-color: #f1831e;
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+			box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+			padding: 7px 15px 0 15px;
+			margin: 1em 0;
+			background: #f1831e;
+		}
+
+		.recover-password #recovery textarea {
+			width: 100%;
+			box-sizing: border-box;
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+			-ms-box-sizing:border-box;
+		}
+
+		.recover-password #recovery .recovery-ownership-title {
+			position: relative;
+			padding-bottom: 0;
+		}
+
+		.recovery-ownership-help {
+			float: right;
+			font-size: 11px;
+			margin-top: -10px;
+			margin-bottom: 5px;
+		}
+
+		.recovery-ownership {
+			clear: both;
+		}
+
+		.recovery-ownership-help {
+			margin: 3px 0 0 0;
+		}
+
+		.recovery-ownership-help-text {
+			display: none;
+			position: absolute;
+				top: 25px;
+				right: 0;
+			z-index: 100;
+			border: 1px solid #e6db55;
+			background-color: lightyellow;
+			width: 250px;
+			padding: 8px;
+			box-shadow: 0 4px 10px -1px rgba(200, 200, 200, 0.7);
+		}
+
+		.account-recovery-link {
+			margin-bottom: 16px;
+		}
+
+		.login #nosms {
+			font-size: 13px;
+			padding: 0 24px 0;
+			margin: 16px 0 0 0;
+		}
+	</style>
+			<style type="text/css">
+			.twostep-login-details strong {
+				white-space: nowrap;
+			}
+		</style>
+		</head>
+	<body class="login login-action-login wp-core-ui  locale-en">
+		<div id="login">
+		<h1><a href="https://wordpress.com/" title="WordPress.com" tabindex="-1">WordPress.com</a></h1>
+	
+<form name="loginform" id="loginform" action="https://wordpress.com/wp-login.php" method="post">
+	<p>
+		<label for="user_login">Username or Email<br />
+		<input type="text" name="log" id="user_login" class="input" value="" size="20" /></label>
+	</p>
+	<p>
+		<label for="user_pass">Password<br />
+		<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
+	</p>
+		<p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever" checked="checked" /> Stay signed in</label></p>
+	<p class="submit">
+		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In" />
+		<input type="hidden" name="redirect_to" value="https://wordpress.com/" />
+		<input type="hidden" name="testcookie" value="1" />
+	</p>
+</form>
+
+<p id="nav">
+<a class="click-register" href="https://wordpress.com/start?ref=wplogin">Register</a> | 	<a href="https://wordpress.com/wp-login.php?action=lostpassword">Lost your password?</a>
+</p>
+
+<script type="text/javascript">
+function wp_attempt_focus(){
+setTimeout( function(){ try{
+d = document.getElementById('user_login');
+d.focus();
+d.select();
+} catch(e){}
+}, 200);
+}
+
+wp_attempt_focus();
+if(typeof wpOnload=='function')wpOnload();
+</script>
+
+	<p id="backtoblog"><a href="http://wordpress.com/">← Back to WordPress.com</a></p>
+	
+	</div>
+
+	
+	<script type="text/javascript">
+// &lt;![CDATA[
+(function() {
+try{
+  if ( window.external &amp;&amp;'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]&gt;
+</script><script src="https://s1.wp.com/wp-content/js/boomerang-a8c.min.js?v=0.4"></script>
+<script>
+BOOMR.init( {
+	beacon_url: "https://pixel.wp.com/boom.gif",
+	beacon_type: "GET",
+	log: null,
+	a8c_clicks: {
+		'button-primary': {
+			stat: 'wpcom.login.log_in_click',
+			include_page_load: true
+		},
+		'click-register': {
+			stat: 'wpcom.login.register_click',
+			include_page_load: true
+		},
+		'click-backtoblog': {
+			stat: 'wpcom.login.backtoblog_click',
+			include_page_load: true
+		}
+	}
+} );
+</script>
+		<div class="clear"></div>
+	
+	
+	</body></html>
