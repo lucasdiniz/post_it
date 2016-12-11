@@ -181,14 +181,20 @@ class WordpressPoster:
 
         self.send_post()
 
-        return self.get_post_url()
+        post_url = self.get_post_url()
 
-        #quit_browser()
+        self.quit_browser()
+
+        return post_url
 
     
 
 if __name__ == "__main__":
+
+    #Example of usage
     wordpress_poster = WordpressPoster()
+    post_url = wordpress_poster.publish_new_post() #fill here the data used to make the post
+    print post_url
 
 
 
