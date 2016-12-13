@@ -10,7 +10,7 @@ import os, sys
 class WordpressPoster:
 
     def __init__(self):
-        self.browser = 0
+        self.browser = None
    
     def start_browser(self, path_to_chrome_driver):
 
@@ -34,7 +34,11 @@ class WordpressPoster:
 
     def make_login(self, user_login, user_password):
 
-        login_text_box = self.browser.find_element_by_name('log')
+        MAX_WAIT_TIME = 5 #5seg
+
+        login_text_box = WebDriverWait(self.browser, MAX_WAIT_TIME).until(
+        EC.element_to_be_clickable((By.NAME, "log")))
+
         login_text_box.send_keys(user_login)
 
         password_text_box = self.browser.find_element_by_name('pwd')
@@ -157,7 +161,7 @@ class WordpressPoster:
     def publish_new_post(self,
         user_login,user_password, 
         post_title, post_html_content, post_tags, post_category, post_image_link,
-        path_to_chrome_driver=os.path.dirname(os.path.realpath(__file__)) + '/chromedriver_folder/chromedriver', 
+        path_to_chrome_driver=os.path.dirname(os.path.realpath(__file__)) + '/chromedriver_folder/chromedriver.exe', 
         wordpress_login_link='https://wordpress.com/wp-login.php'
         ):
 
@@ -193,7 +197,7 @@ if __name__ == "__main__":
 
     #Example of usage
     wordpress_poster = WordpressPoster()
-    post_url = wordpress_poster.publish_new_post() #fill here the data used to make the post
+    post_url = wordpress_poster.publish_new_post() #fill in the parameters
     print post_url
 
 
